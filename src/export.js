@@ -2,6 +2,8 @@ function exportCSV(metrics) {
   const generatedAt =
     new Date().toISOString();
 
+  console.log(`Exporting ${metrics.length} rows`);
+
   const rows = [
     `generated_at,${generatedAt}`,
     "page,visits",
